@@ -1,8 +1,0 @@
-﻿  test.cpp
-c:\users\rittik-pc\source\repos\ear_clipper\ear_clipper\test.cpp(18): warning C4305: 'argument': truncation from 'double' to 'T'
-          with
-          [
-              T=float
-          ]
-c:\users\rittik-pc\source\repos\ear_clipper\ear_clipper\test.cpp(23): warning C4018: '<': signed/unsigned mismatch
-  ear_clipper.vcxproj -> C:\Users\RITTIK-PC\source\repos\ear_clipper\Debug\ear_clipper.exe
