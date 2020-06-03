@@ -1,4 +1,4 @@
-# ear_clipper
+# ear_clipper [![Build Status](https://travis-ci.org/codectile/ear_clipper.svg?branch=master)](https://travis-ci.org/codectile/ear_clipper)
 
 A triangulation tool for simple polygons.
 
