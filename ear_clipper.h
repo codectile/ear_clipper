@@ -115,19 +115,18 @@ namespace ear_clipper
 		{
 			int sz = vertices.size();
 
-			/* check if there is any point in the triangle */
-			if (has_points_in_tri(i, idx1, idx2))
-				return;
-
 			/* calculate the determinant */
 			vertex<T> v1 = (vertices[i] - vertices[idx1]);
 			vertex<T> v2 = (vertices[idx1] - vertices[idx2]);
 			T det = (v1.x * v2.y - v1.y * v2.x);
 
 			/* if positive, we have an ear and set the vertex ear property to true */
-			if (det > T(0))
-				vertices[idx1].is_ear = true;
+			if (det < T(0))
+				return;
 
+			/* check if there is any point in the triangle */
+			if (!has_points_in_tri(i, idx1, idx2))
+				vertices[idx1].is_ear = true;
 		}
 
 		/* bayer coordinates used here to check if a point is in the given triangle, a different approach can also be used */
